@@ -12,8 +12,14 @@ public class MoveCamera : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		/*if (Input.GetMouseButton (0)) {
+			if (Input.GetMouseButton(0)) { 
+				print(Input.mousePosition); 
+			}
+			print ("");
+		}*/
 		if (Input.GetKey (KeyCode.A)) {
-			print ("A");
+			//print ("A");
 			//gameObject.transform.position = new Vector3 (transform.position.x - 0.6f, transform.position.y);
 			gameObject.transform.position = new Vector3 (
 				gameObject.transform.position.x - 0.6f, 
@@ -21,7 +27,7 @@ public class MoveCamera : MonoBehaviour
 				gameObject.transform.position.z);
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			print ("D");
+			//print ("D");
 			//gameObject.transform.position = new Vector3 (transform.position.x + 0.6f, transform.position.y);
 			gameObject.transform.position = new Vector3 (
 				gameObject.transform.position.x + 0.6f, 
@@ -29,14 +35,14 @@ public class MoveCamera : MonoBehaviour
 				gameObject.transform.position.z);
 		}
 		if (Input.GetKey (KeyCode.W)) {
-			print ("W");
+			//print ("W");
 			gameObject.transform.position = new Vector3 (
 				gameObject.transform.position.x, 
 				gameObject.transform.position.y, 
 				gameObject.transform.position.z + 0.6f);
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			print ("S");
+			//print ("S");
 			gameObject.transform.position = new Vector3 (
 				gameObject.transform.position.x, 
 				gameObject.transform.position.y, 

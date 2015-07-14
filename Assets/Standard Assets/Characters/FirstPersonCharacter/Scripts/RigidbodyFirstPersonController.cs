@@ -126,14 +126,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void Update()
         {
-            RotateView();
+			if (Input.GetMouseButton (1)) {
+				//Debug.Log ("Pressed right click.");
 
-            if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
-            {
-                m_Jump = true;
-            }
-        }
+				RotateView ();
 
+				if (CrossPlatformInputManager.GetButtonDown ("Jump") && !m_Jump) {
+					m_Jump = true;
+				}
+			}
+		}
 
         private void FixedUpdate()
         {
